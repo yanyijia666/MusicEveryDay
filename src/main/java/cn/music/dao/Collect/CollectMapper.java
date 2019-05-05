@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository("CollectMapper")
+@Repository("collectMapper")
 public interface CollectMapper {
     /**
      * 得到所有歌单信息

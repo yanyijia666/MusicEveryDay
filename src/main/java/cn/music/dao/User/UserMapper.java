@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository("UserMapper")
+@Repository("userMapper")
 public interface UserMapper {
 
     /**

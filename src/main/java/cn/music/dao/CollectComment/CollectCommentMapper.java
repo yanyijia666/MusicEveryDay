@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository("CollectCommentMapper")
+@Repository("collectCommentMapper")
 public interface CollectCommentMapper {
     /**
      * 根据歌单编号得到歌单评论

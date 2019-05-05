@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import java.net.Inet4Address;
 import java.util.List;
 
-@Repository("EnshrineMapper")
+@Repository("enshrineMapper")
 public interface EnshrineMapper {
     /**
      * 根据用户编号得到用户收藏歌单

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository("TypeMapper")
+@Repository("typeMapper")
 public interface TypeMapper {
     /**
      * 得到类别集合

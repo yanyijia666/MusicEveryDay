@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository("MusicMapper")
+@Repository("musicMapper")
 public interface MusicMapper {
     /**
      * 得到所有音乐

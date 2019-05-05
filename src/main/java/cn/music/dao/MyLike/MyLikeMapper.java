@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository("MyLikeMapper")
+@Repository("myLikeMapper")
 public interface MyLikeMapper {
     /**
      * 根据用户编号拿到该用户喜欢的音乐

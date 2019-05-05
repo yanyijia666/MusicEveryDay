@@ -3,7 +3,7 @@ package cn.music.dao.Manager;
 import cn.music.pojo.Manager;
 import org.springframework.stereotype.Repository;
 
-@Repository("ManagerMapper")
+@Repository("managerMapper")
 public interface ManagerMapper {
     /**
      * 根据编号拿到管理员对象

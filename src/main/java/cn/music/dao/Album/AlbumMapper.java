@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository("AlbumMapper")
+@Repository("albumMapper")
 public interface AlbumMapper {
     /**
      * 得到专辑数量

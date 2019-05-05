@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository("MusicCommentMapper")
+@Repository("musicCommentMapper")
 public interface MusicCommentMapper {
     /**
      * 根据音乐编号拿到该音乐评论
