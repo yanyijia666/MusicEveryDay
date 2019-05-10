@@ -43,7 +43,7 @@
 				<p>推荐</p>
 				<ul id="ainle">
 
-					<li><span><img src="/static/img/yiny.png"/><a href="index2.html">发现音乐</a></span></li>
+					<li><span><img src="/static/img/yiny.png"/><a href="/index2.html">发现音乐</a></span></li>
 					<li><span><img src="/static/img/redian.png"/><a>私人FM</a></span></li>
 					<li><span><img src="/static/img/shiping.png"/><a>视频</a></span></li>
 					<li><span><img src="/static/img/friend.png"/><a>朋友</a></span></li>
