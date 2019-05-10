@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -17,7 +17,7 @@
 			<div class="bbb">
 				<img src="/static/img/20190505112100.png" />
 				<div class="ccc">
-					<a>admin</a>
+					<a>${user.userName}</a>
 					<a>通知</a>
 					<a>更多</a>
 
@@ -80,7 +80,7 @@
 
 								<ul>
 									<li>
-										<p class="aisini"><img src="/static/img/nan(1).png" style="height: 60px;" /><span>admin</span><img style="height: 20px;" src="/static/img/nan.png" /></p>
+										<p class="aisini"><img src="/static/img/nan(1).png" style="height: 60px;" /><span>${user.userName}</span><img style="height: 20px;" src="/static/img/nan.png" /></p>
 									</li>
 									<li>
 										<a name="bofang" href="#">播放全部<img style="height: 15px; margin-left: 8px;" src="/static/img/aaaaaaaaa.png" /></a>

@@ -22,7 +22,13 @@
 	<div class="bbb">
 		<img src="/static/img/20190505112100.png" />
 		<div class="ccc">
-			<a>admin</a>
+			<c:if test="${user==null}">
+				<a href="/user/login.html">马上登陆</a>
+			</c:if>
+			<c:if test="${user!=null}">
+				<a>${user.userName} </a><a href="/user/loginOut.html.html">退出登陆</a>
+			</c:if>
+
 			<a>通知</a>
 			<a>更多</a>
 
@@ -37,7 +43,7 @@
 				<p>推荐</p>
 				<ul id="ainle">
 
-					<li><span><img src="/static/img/yiny.png"/><a href="/user/index.html">发现音乐</a></span></li>
+					<li><span><img src="/static/img/yiny.png"/><a href="index2.html">发现音乐</a></span></li>
 					<li><span><img src="/static/img/redian.png"/><a>私人FM</a></span></li>
 					<li><span><img src="/static/img/shiping.png"/><a>视频</a></span></li>
 					<li><span><img src="/static/img/friend.png"/><a>朋友</a></span></li>
@@ -86,7 +92,7 @@
 
 							<ul>
 								<li>
-									<p class="aisini"><img src="/static/img/nan(1).png" style="height: 60px;" /><span>admin</span><img style="height: 20px;" src="/static/img/nan.png" /></p>
+									<p class="aisini"><img src="/static/img/${user.userPortrait}" style="height: 60px;" /><span>${user.userName}</span><img style="height: 20px;" src="/static/img/nan.png" /></p>
 								</li>
 								<li>
 									<a name="bofang" href="#">播放全部<img style="height: 15px; margin-left: 8px;" src="/static/img/aaaaaaaaa.png" /></a>

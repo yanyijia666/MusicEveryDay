@@ -50,7 +50,7 @@
 					<div class="bbb">
 						<img src="../musichall/img/20190505112100.png" />
 						<div class="ccc">
-							<a>admin</a>
+							<a>${user.userName}</a>
 							<a>通知</a>
 							<a>更多</a>
 
@@ -65,7 +65,7 @@
 									<p>推荐</p>
 									<ul id="ainle">
 
-										<li><span><img src="img/yiny.png"/><a href="/user/index.html">发现音乐</a></span></li>
+										<li><span><img src="img/yiny.png"/><a href="/index2.html">发现音乐</a></span></li>
 										<li><span><img src="img/redian.png"/><a>私人FM</a></span></li>
 										<li><span><img src="img/shiping.png"/><a>视频</a></span></li>
 										<li><span><img src="img/friend.png"/><a>朋友</a></span></li>

@@ -9,7 +9,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * 自定义事件装配编辑器基类
+ * 自定义时间装配编辑器基类
  */
 public class BaseController {
     @InitBinder

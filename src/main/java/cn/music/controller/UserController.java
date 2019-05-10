@@ -34,7 +34,7 @@ public class UserController extends BaseController {
       User user=  userService.login(userName,userPwd);
         if(user!=null){
             session.setAttribute("user",user);
-            return "yinyueguan";
+            return "index";
         }else{
             return "login";
         }
@@ -47,7 +47,7 @@ public class UserController extends BaseController {
     @RequestMapping("/loginOut.html")
     public String loginOut(HttpSession session){
 session.removeAttribute("user");
-        return "yinyueguan";
+        return "index";
     }
 
     /**

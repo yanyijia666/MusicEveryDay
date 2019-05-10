@@ -68,9 +68,9 @@
                 <div id="nav" class="fl">
                     <ul class="nav">
                         <li>
-                            <a href="#">音乐馆</a>
+                            <a href="/user/index.html">首页</a>
                             <div>
-                                <a href="/user/index.html">首页</a><span>|</span>
+                                <a href="#">首页</a><span>|</span>
                                 <a href="#">排行榜</a><span>|</span>
                                 <a href="#">歌单广场</a><span>|</span>
                                 <a href="#">电台</a><span>|</span>
@@ -90,7 +90,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="">我的音乐</a>
+                            <a href="/mylike/like.html">我的音乐</a>
                             <div>
                                 <a href="#">主题</a><span>|</span>
                                 <a href="#">歌单</a><span>|</span>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <%@page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 
 	<head>
@@ -21,7 +22,12 @@
 			<div class="bbb">
 		<img src="/static/img/20190505112100.png" />
 		<div class="ccc">
-		<a>admin</a>
+            <c:if test="${user==null}">
+                <a href="/user/login.html">您还未登陆，马上登陆</a>
+            </c:if>
+            <c:if test="${user!=null}">
+                <a>${user.userName} </a><a href="/user/loginOut.html">退出登陆</a>
+            </c:if>
 		<a>通知</a>
 		<a>更多</a>
 		
@@ -36,7 +42,7 @@
 							<p>推荐</p>
 							<ul id="ainle">
 
-								<li><span><img src="/static/img/yiny.png"/><a href="/user/index.html">发现音乐</a></span></li>
+								<li><span><img src="/static/img/yiny.png"/><a href="/index2.html">发现音乐</a></span></li>
 								<li><span><img src="/static/img/redian.png"/><a>私人FM</a></span></li>
 								<li><span><img src="/static/img/shiping.png"/><a>视频</a></span></li>
 								<li><span><img src="/static/img/friend.png"/><a>朋友</a></span></li>
@@ -79,7 +85,7 @@
 					<div id="quanbu">
 						<div id="toubiaoqian" >
                                     <ul >
-                                        <li><a href="../musichall/index.html">音乐馆</a></li>
+                                        <li><a href="/index2.html">音乐馆</a></li>
                                         <li><a href="#">歌单</a></li>
                                         <li><a href="#">主播电台</a></li>
                                         <li><a href="#">排行榜</a></li>
