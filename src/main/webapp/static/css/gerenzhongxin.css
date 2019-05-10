@@ -1,0 +1,73 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: "仿宋";
+}
+body{
+	background-color: #A9A9A9;
+}
+.bbb{
+	width: 100%;
+	height: 80px;
+	border-bottom: 5px red solid;
+	background-color:#252525 ;
+}
+.bbb img{
+	padding-top: 10px;
+	padding-left: 30px;
+	vertical-align: middle;
+}
+.bbb .ccc a{
+	
+	color:  white;
+	margin-left: 30px;
+	position: relative;
+	left: 1300px;
+	top: -35px;
+	text-decoration: none;
+}
+.ccc a:hover{
+	text-decoration: underline;
+}
+.xiu{
+	position: relative;
+	left: 300px;
+	background-color: #E9ECEC;
+	border: 1px dimgrey solid;
+	width: 60%;
+	height: 2000px;
+}
+.biaotou{
+	border-bottom: 5px darkgoldenrod solid;
+	position: relative;
+	top: 50px;
+}
+.danyuan{
+	position: relative;
+	top:100px ;
+}
+.danyuan tr{
+	line-height: 30px;
+}
+.danyuan .t{
+	width: 330px;
+	height: 30px;
+}
+.danyuan #an{
+	width: 100px;
+	height: 25px;
+	background-color: #00A0E9;
+}
+#xiutou{
+	background-color: #696969;
+	
+	color: white;
+	position: relative;
+	left: -100px;
+}
+.xiuxiang{
+	position: absolute;
+	left: 500px;
+	top: 150px;
+
+}

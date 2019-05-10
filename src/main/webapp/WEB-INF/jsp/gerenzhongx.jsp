@@ -43,7 +43,11 @@
 				<p>推荐</p>
 				<ul id="ainle">
 
+<<<<<<< HEAD
 					<li><span><img src="/static/img/yiny.png"/><a href="/index2.html">发现音乐</a></span></li>
+=======
+					<li><span><img src="/static/img/yiny.png"/><a href="index2.html">发现音乐</a></span></li>
+>>>>>>> taocheng
 					<li><span><img src="/static/img/redian.png"/><a>私人FM</a></span></li>
 					<li><span><img src="/static/img/shiping.png"/><a>视频</a></span></li>
 					<li><span><img src="/static/img/friend.png"/><a>朋友</a></span></li>
@@ -92,7 +96,11 @@
 
 							<ul>
 								<li>
+<<<<<<< HEAD
 									<p class="aisini"><img src="/static/img/${touxiang}" style="height: 60px;" /><span>${user.userName}</span><img style="height: 20px;" src="/static/img/nan.png" /></p>
+=======
+									<p class="aisini"><img src="/static/img/${user.userPortrait}" style="height: 60px;" /><span>${user.userName}</span><img style="height: 20px;" src="/static/img/nan.png" /></p>
+>>>>>>> taocheng
 								</li>
 								<li>
 									<a name="bofang" href="#">播放全部<img style="height: 15px; margin-left: 8px;" src="/static/img/aaaaaaaaa.png" /></a>

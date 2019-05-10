@@ -1,0 +1,91 @@
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: "楷体";
+}
+
+#lefttiantian ul{
+	
+	list-style: none;
+}
+#lefttiantian ul li{
+	border-left: 3px whitesmoke solid;
+	
+	line-height: 35px;
+}
+#lefttiantian ul li img{
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	vertical-align:middle;
+}
+#lefttiantian{
+	
+	height: 800px;
+	width: 300px;
+	background-color: #E9ECEC;
+	overflow-y:auto;
+}
+#lefttiantian p{
+	
+	margin-left: 5px;
+	color: darkgray;
+}
+#lefttiantian p a img {
+	width: 17px;
+	height: 17px;
+	margin-left: 35px;
+	vertical-align:middle;
+}
+.xiala1{
+	width: 20px;
+	height: 20px;
+	margin-left: 5px;
+	vertical-align:middle;
+}
+.xiala2{
+	width: 20px;
+	height: 20px;
+	margin-left: 5px;
+	vertical-align:middle;
+}
+
+.xiala{
+	width: 20px;
+	height: 20px;
+	margin-left: 55px;
+	vertical-align:middle;
+}
+
+#lefttiantian ul li:hover{
+	cursor:pointer;
+	color: #A9A9A9;
+}
+#lefttiantian::-webkit-scrollbar {
+				/*滚动条整体样式*/
+				width: 10px;
+				/*高宽分别对应横竖滚动条的尺寸*/
+				height: 1px;
+			}
+			
+			#lefttiantian::-webkit-scrollbar-thumb {
+				/*滚动条里面小方块*/
+				border-radius: 10px;
+				-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0,0.2);
+				background: #D3D3D3;
+			}
+			
+			#lefttiantian::-webkit-scrollbar-track {
+				/*滚动条里面轨道*/
+				-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+				border-radius: 10px;
+				background: #EDEDED;
+			}
+#lefttiantian #ainle li:first-child{
+
+}
+#lefttiantian #ainle li:nth-child(2){
+	
+}

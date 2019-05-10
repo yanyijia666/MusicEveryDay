@@ -74,7 +74,11 @@
 						<td></td>
 					</tr>
 					<div class="xiuxiang">
+<<<<<<< HEAD
 						<img src="/static/uploadfiles/${touxiang} "/><input type="file" name="attre" id="attre"  value="修改头像" id="xiutou">
+=======
+						<img src="/static/uploadfiles/${user.userPortrait} "/><input type="file" name="attre" id="attre"  value="修改头像" id="xiutou">
+>>>>>>> taocheng
 					</div>
 				</table>				
 			</form>				

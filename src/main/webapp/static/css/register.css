@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding:0;
+    font-size:12px;
+    line-height:20px;
+}
+#register{
+  
+    margin: 0 auto;
+    background-image: url(../img/ce.jpg) ;
+    height:100%;
+
+width:100%;
+
+overflow: hidden;
+
+background-size:cover;
+}
+.biao{
+	position: relative;
+	left: 900px;
+}
+.hr_1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3275c3;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 2px solid #3275c3;
+    vertical-align:bottom;
+    padding-left:500px;
+    margin-bottom: 15px;
+}
+#register dl{clear: both; height: 30px; }
+#register dl dt{
+    text-align:right;
+    width:80px;
+    height:25px;
+    padding-right:5px;
+    float: left;
+    line-height: 80px;
+}
+#register dl dd{
+    float: left;
+    line-height: 80px;}
+#register dl dd div{ display: inline; padding-left: 5px;}
+#register dl dd input:not(.btn){
+    width:130px;
+    height:18px;
+    border:solid 1px #0066FF;
+}
+
+.red{
+    color:#cc0000;
+    font-weight:bold;
+}
+
+div{
+    color:#F00;
+}

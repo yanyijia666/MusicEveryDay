@@ -1,0 +1,24 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: "楷体";
+}
+.bbb{
+	width: 100%;
+	height: 80px;
+	border: 1px #B3B3B3 solid;
+	background-color:#252525 ;
+}
+.bbb img{
+	padding-top: 10px;
+	padding-left: 30px;
+	vertical-align: middle;
+}
+.bbb .ccc a{
+	
+	color:  white;
+	margin-left: 30px;
+	position: relative;
+	left: 1300px;
+	top: -35px;
+}

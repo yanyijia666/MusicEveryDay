@@ -3,6 +3,11 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.music.dao.MyLike.MyLikeMapper">
-
-
+    <!--拿到用户喜欢的歌单集合-->
+<select id="getMusicByUserId" resultType="Music">
+     SELECT * FROM music AS m WHERE m.`musicId` IN (SELECT l.`musicId` FROM mylike AS l WHERE l.`userId`=#{userId} )
+</select>
+<delete id="deleteMyLikeByLikeId" parameterType="Integer">
+delete   from mylike where likeId=#{likeId}
+</delete>
 </mapper>

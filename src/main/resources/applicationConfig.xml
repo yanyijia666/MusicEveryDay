@@ -12,7 +12,7 @@
         http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
         http://www.springframework.org/schema/tx
         http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
-    <context:component-scan base-package="cn.music.dao"/>
+    <context:component-scan base-package="cn.music.dao,cn.music.service.impl"/>
     <!--扫描包中注解标注的类,使用注解一定要加上这行代码-->
     <!--引入Properties文件-->
     <bean id="dataSource1" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -60,6 +60,6 @@
     <!--使用mapper扫描包,可以动态的注册MapperFactoryBean,如此即可批量产生映射器实现类
         每个实现类的名称默认为映射器的类名首字母小写-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="cn.bdqn.dao"/>
+        <property name="basePackage" value="cn.music.dao"/>
     </bean>
 </beans>

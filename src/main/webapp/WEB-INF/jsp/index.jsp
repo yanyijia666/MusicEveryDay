@@ -225,7 +225,11 @@
 
 
 
+<<<<<<< HEAD
 	<script type="text/javascript " src="/static/js/swiper.min.js "></script>
+=======
+	<script type="text/javascript " src="js/swiper.min.js "></script>
+>>>>>>> taocheng
 	<script type="text/javascript ">
 		window.onload = function() {
 			var swiper = new Swiper('.swiper-container', {

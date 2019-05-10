@@ -1,16 +1,19 @@
 package cn.music.pojo;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 
 /**
  * 用户表
  */
 public class User {
-    private int userId;//用户编号
+    private Integer userId;//用户编号
     private String userPortrait;//用户头像
     private String userName;//用户名
     private String userPwd;//用户密码
     private int sex;//性别
+   /* @DateTimeFormat(pattern = "yyyy-MM-dd")*/
     private Date birthData;//出生日期
     private String address;//住址
     private String phone;//电话
@@ -19,11 +22,11 @@ public class User {
     private int vip;//是否会员1.不是2.是
     private int grade;//等级
 
-    public int getUserId() {
+    public Integer getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(Integer userId) {
         this.userId = userId;
     }
 
