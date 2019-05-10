@@ -2,6 +2,7 @@ package cn.music.dao.MyLike;
 
 import cn.music.pojo.Music;
 import org.springframework.stereotype.Repository;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -12,7 +13,7 @@ public interface MyLikeMapper {
      * @param userId
      * @return
      */
-    List<Music> getMusicByUserId(Integer userId);
+    List<Music> getMusicByUserId(@RequestParam("userId") Integer userId);
 
     /**
      * 根据用户编号拿到该用户喜欢的音乐数量

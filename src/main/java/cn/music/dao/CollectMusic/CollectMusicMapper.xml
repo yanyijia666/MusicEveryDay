@@ -3,6 +3,15 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.music.dao.CollectMusic.CollectMusicMapper">
+    <!--查询歌单里的歌曲-->
+    <select id="getCollectByCollectId" resultType="cn.music.pojo.Music">
+    SELECT *FROM music AS m WHERE m.`musicId` IN( SELECT c.`musicId` FROM collectMusic AS c WHERE c.`collectId`=#{collectId});
+</select>
+    <!--查询歌单的总数-->
+<select id="CollectCountByCollectId" resultType="Integer">
+    SELECT COUNT(*)FROM music AS m WHERE m.`musicId` IN( SELECT c.`musicId` `collectcomment` FROM collectMusic AS c WHERE c.`collectId`=#{collectId})
+</select>
+
 
 
 </mapper>

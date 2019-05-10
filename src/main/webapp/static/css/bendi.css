@@ -1,0 +1,113 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+#quanbu{
+	width: 1000px;
+	margin: 0 auto;
+}
+#tou{
+	width: 1000px;
+	height: 300px;
+	border: 1px solid #B3B3B3;
+	
+}
+.ims{
+	float: left;
+}
+#ziliao{
+	height: 300px;
+	width: 500px;
+	display: inline-block;
+	float: left;
+	margin-left: 30px;
+	
+}
+#ziliao h1{
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+#ziliao ul{
+	list-style: none;
+}
+#ziliao ul li:nth-child(2) a{
+	color: #686868;
+	text-decoration: none;
+	background-color: darkgray;
+	border: 1px #696969 solid;
+	padding: 5px;
+	border-radius: 5px;
+	margin-right: 30px;
+	
+}
+#ziliao ul li:nth-child(2) a:hover{
+	background-color: #C3C3C3;
+}
+#ziliao ul li:nth-child(2){
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+#ziliao ul li:nth-child(4){
+	margin-top: 10px;
+}
+#csd{
+	clear: both;
+	height: 55px;
+	border-bottom: 1px #B3B3B3 solid ;
+}
+#csd ul li{
+	display: inline-block;
+	margin-left: 40px;
+	margin-top: 25px;
+	
+}
+#csd ul li:nth-child(4){
+	margin-left: 500px;
+	border-bottom:none;
+	border: 1px #B3B3B3 solid ;
+	border-radius: 20px;
+}
+.sosuo{
+	border: none;
+	border-radius: 20px;
+	outline:none;
+	margin: 2px;
+	
+}
+#listdiv{
+	height: 700px;
+}
+
+#listdiv table td:first-child{
+	width: 50px;
+	
+}
+#listdiv table  tr:first-child{
+	height: 30px;
+border: 1px solid #B3B3B3;
+	
+}
+#listdiv table  tr:first-child td:hover{
+	background-color: #E5E5E5;
+}
+#listdiv table  tr:first-child td{
+	border-left:1px solid #B3B3B3 ;
+	padding-left: 10px;
+}
+#listdiv table  td{
+	padding-left: 10px;
+}
+#listdiv table  tr{
+	width: 100%;
+	
+}
+
+#listdiv table{
+	width: 100%;
+	border: 1px #B3B3B3 solid;
+	}
+
+.add{
+	background-color: #C6C6C6;
+}

@@ -3,10 +3,12 @@ package cn.music.pojo;
 /**
  * 歌单收藏表
  */
+
 public class Enshrine {
     private int enshrineId;//编号
     private User userId;//收藏的用户
     private Collect collectId;//收藏歌单
+
 
     public int getEnshrineId() {
         return enshrineId;

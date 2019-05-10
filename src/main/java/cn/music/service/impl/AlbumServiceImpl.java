@@ -8,6 +8,7 @@ import javax.annotation.Resource;
 
 @Service("AlbumService")
 public class AlbumServiceImpl implements AlbumService {
+
     @Resource
     private AlbumMapper albumMapper;
 }
