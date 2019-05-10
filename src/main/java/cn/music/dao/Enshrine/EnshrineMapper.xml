@@ -3,6 +3,12 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.music.dao.Enshrine.EnshrineMapper">
-
-
+    <!--得到用户收藏的歌单-->
+<select id="getCollectByUserId" resultType="cn.music.pojo.Collect">
+SELECT * FROM collect WHERE userid=#{userId}
+</select>
+    <!--新增一个歌单-->
+<insert id="addEnshrine" >
+    INSERT INTO `enshrine` VALUES (NULL,#{userId},#{collectId})
+</insert>
 </mapper>

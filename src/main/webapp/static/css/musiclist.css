@@ -1,0 +1,26 @@
+*{
+	 margin:0px;
+    padding:0px;
+}
+.zon .sds{
+	float: left;
+}
+
+.dib{
+	height: 200px;
+	width: 500px;
+	border: 1px red solid;
+}
+#aibao{
+	width: 30px;
+	background-color: #d81e06;
+	border: red 1px solid;
+	border-radius: 5px;
+}
+.dib span a{
+	color: white;
+
+}
+.dib span a img{
+	vertical-align: middle;
+}

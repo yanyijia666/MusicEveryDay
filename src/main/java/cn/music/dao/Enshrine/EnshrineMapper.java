@@ -1,12 +1,13 @@
 package cn.music.dao.Enshrine;
 
 import cn.music.pojo.Collect;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.net.Inet4Address;
 import java.util.List;
 
-@Repository("enshrineMapper")
+
 public interface EnshrineMapper {
     /**
      * 根据用户编号得到用户收藏歌单
@@ -28,7 +29,7 @@ public interface EnshrineMapper {
      * @param collectId
      * @return
      */
-    int addEnshrine(Integer userId,Integer collectId);
+    int addEnshrine(@Param("userId") Integer userId,@Param("collectId") Integer collectId);
 
     /**
      * 根据收藏编号删除收藏记录
