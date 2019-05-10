@@ -1,0 +1,41 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	width: 1500px;
+	background: url(../img/beijing.jpg) no-repeat;
+
+height:100%;
+
+width:100%;
+
+overflow: hidden;
+
+background-size:cover;
+}
+.login{
+	position: relative;
+	top: 200px;
+	left: 600px;
+	border: solid wheat 1px ;
+	width: 500px;
+}
+.login tr{
+	line-height: 80px;
+	
+}
+.login #ll{
+	
+	width: 250px;
+	height: 50px;
+}
+.login .tt{
+	
+	width: 200px;
+	height: 25px;
+}
+.login .ta{
+	position: relative;
+	left: 100px;
+}

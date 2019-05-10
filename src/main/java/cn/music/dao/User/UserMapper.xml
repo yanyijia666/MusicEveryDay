@@ -3,6 +3,17 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.music.dao.User.UserMapper">
-
-
+<!--登陆-->
+    <select id="login" resultType="User" >
+select * from user where userName=#{userName}and userPwd=#{userPwd}
+    </select>
+    <!--新增-->
+<insert id="addUser" parameterType="User">
+   INSERT INTO `user`(userPortrait,userName,userPwd,birthData,address,phone)
+   VALUES('baba.jpg',#{userName},#{userPwd},#{birthData},#{address},#{phone});
+</insert>
+    <!--修改-->
+<update id="updateUserByUserId" parameterType="User">
+  UPDATE `user` SET userPortrait=#{userPortrait},userName=#{userName},userPwd=#{userPwd},birthData=#{birthData},address=#{address},brief=#{brief} WHERE userId=#{userId}
+</update>
 </mapper>

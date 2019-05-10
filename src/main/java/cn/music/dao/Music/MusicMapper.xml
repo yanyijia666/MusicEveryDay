@@ -3,6 +3,9 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.music.dao.Music.MusicMapper">
-
+<!--得到所有音乐-->
+    <select id="getMusicList" resultType="Music">
+        SELECT * FROM music LIMIT #{dangqian},#{paagenum};
+    </select>
 
 </mapper>

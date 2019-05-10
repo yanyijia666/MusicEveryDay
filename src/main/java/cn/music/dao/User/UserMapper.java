@@ -1,6 +1,7 @@
 package cn.music.dao.User;
 
 import cn.music.pojo.User;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -52,16 +53,16 @@ public interface UserMapper {
      *
      * @return
      */
-    int deleteUserByUserId();
+    int deleteUserByUserId(Integer usrId);
 
     /**
      * 用户登入
      *
      * @param userName
-     * @param usrePwd
+     * @param userPwd
      * @return
      */
-    User login(String userName, String usrePwd);
+    User login(@Param("userName") String userName, @Param("userPwd")String userPwd);
 
 
 }

@@ -1,6 +1,7 @@
 package cn.music.dao.Music;
 
 import cn.music.pojo.Music;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -11,7 +12,7 @@ public interface MusicMapper {
      * 得到所有音乐
      * @return
      */
-    List<Music> getMusicList();
+    List<Music> getMusicList(@Param("dangqian") Integer dangqian,@Param("paagenum") Integer paagenum);
 
     /**
      * 根据音乐名得到音乐对象

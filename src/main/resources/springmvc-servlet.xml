@@ -11,7 +11,38 @@
         http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
     <context:component-scan base-package="cn.music.controller"/>
     <!--一键式配置-->
-    <mvc:annotation-driven/>
+    <!--JSON传递数据时中文乱码以及日期处理配置-->
+    <mvc:annotation-driven >
+
+        <mvc:message-converters>
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <property name="supportedMediaTypes">
+                    <list>
+                        <value>
+                            application/json;charset=utf-8
+                        </value>
+                    </list>
+                </property>
+            </bean>
+            <!-- 处理日期格式-->  <!--实体类有@JSONField(format = "yyyy-MM-dd")这个注解就会执行该注解，
+            配置这个文件后控制器处无需转成JSON，直接返回
+            数据即可。转成json数据后该配置文件不会按照默认的日期格式显示。-->
+            <bean class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter">
+                <property name="supportedMediaTypes">
+                    <list>
+                        <value>application/json</value>
+                        <value>text/html;charset=utf-8</value>
+                    </list>
+                </property>
+                <property name="features">
+                    <list>
+                        <value>WriteDateUseDateFormat</value>
+                    </list>
+                </property>
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+
     <!--配置视图解析器-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <!-- 前缀-->
