@@ -26,7 +26,7 @@
 				<a href="/user/login.html">马上登陆</a>
 			</c:if>
 			<c:if test="${user!=null}">
-				<a>${user.userName} </a><a href="/user/loginOut.html.html">退出登陆</a>
+				<a>${user.userName} </a><a href="/user/loginOut.html">退出登陆</a>
 			</c:if>
 
 			<a>通知</a>
@@ -132,10 +132,11 @@
 								</tr>
 
 
-								<c:forEach  varStatus="aa"  var="li" items="${list}">
+								<c:forEach   var="li" items="${list}">
 									<tr>
-										<td>${aa.index}</td>
-										<td><a><input type="image" src="/static/img/xiazai.png" style="height: 20px; width: 20px" ></a><a onclick="return confirm('确定删除?');" href="/mylike/droup.html?likeId=${aa.index}"><input type="image"  src="/static/img/shanchu.png" style="height: 20px; width: 20px"></a></td>
+										<td style="display: none">${li.musicId} </td>
+
+										<td><a><input type="image" src="/static/img/xiazai.png" style="height: 20px; width: 20px" ></a><a onclick="del(${li.musicId},this)" href="#"><input type="image"  src="/static/img/shanchu.png" style="height: 20px; width: 20px"></a></td>
 										<td>${li.musicName}</td>
 										<td>${li.singer}</td>
 										<td>2017（-）</td>
@@ -157,6 +158,7 @@
 <script type="text/javascript" src="/static/js/jquery-1.12.4.js"></script>
 <script type="text/javascript" src="/static/js/tiantian.js"></script>
 <script type="text/javascript" src="/static/js/tiantianzuo.js"></script>
+<script type="text/javascript" src="/static/js/mylikeAjks.js"></script>
 <script>
 	$(document).ready(function() {
 
