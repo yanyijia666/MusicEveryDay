@@ -26,7 +26,7 @@
 				<a href="/user/login.html">马上登陆</a>
 			</c:if>
 			<c:if test="${user!=null}">
-				<a>${user.userName} </a><a href="/user/loginOut.html.html">退出登陆</a>
+				<a>${user.userName} </a><a href="/user/loginOut.html">退出登陆</a>
 			</c:if>
 
 			<a>通知</a>
